@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ControlAppMVC.Models.Cliente>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul>
+    @foreach (var c in Model)
+    {
+        <li>@c.Id</li>
+        <li>@c.Name</li>
+        <li>@c.Email</li>
+        <li>@c.PhoneNumber</li>
+    }
+</ul>
+
